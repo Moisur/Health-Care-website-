@@ -1,0 +1,6 @@
+.containers{
+    width: 100%;
+    height: 92vh;
+    background-image: linear-gradient(to right top, #af5086, #af67a3, #ac7ebb, #a893d0, #a6a8e0, #9ab1e8, #8fbaed, #86c3ef, #69c4e9, #4cc4de, #36c4ce, #33c2b9);
+    clip-path: ellipse(90% 100% at 74% 0%);
+}
