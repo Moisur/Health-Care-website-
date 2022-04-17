@@ -4,13 +4,19 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            <div className='containers '>
-                <div className=' px-20 py-10 grid grid-cols-2 gap-6'>
-                    <div>
-                        <h1>Helth </h1>
+            <div className='containers'>
+                <div className='px-5 py-10 grid grid-cols-1 md:grid-cols-2 gap-6 '>
+                    <div className='p-10 md:mt-20'>
+                        <h1 className='text-white font-bold  font-mono text-4xl'>Health <span className='text-red-600'>Care</span> Services</h1>
+                        <p className=' py-5 font-sans text-slate-200 font-bold  text-xl'>High-quality health care helps prevent diseases and improve quality of life</p>
+                        <Link  to='/about' className='text-xl font-mono font-bold py-2  px-5 rounded bg-emerald-400 text-white '>About</Link>
                     </div>
-                    <div>
-                        <img className='w-[420px]' src={require('../../img/doctor-14118.png')} alt="" />
+                    <div className='mb-10'>
+                        <div className='sm:flex w-[50%] mx-auto gap-6 md:mx-10'>
+                            <img className='animate-bounce w-[200px]  p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14118.png')} alt="" />
+                            <img className='hover:animate-ping w-[200px] p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14083.png')} alt="" />
+                        </div>
+                        <img className='hover:animate-spin w-[200px] mx-auto  mt-6 p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14128.png')} alt="" />
                     </div>
                 </div>
             </div>
