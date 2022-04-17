@@ -2,9 +2,17 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faBars} from '@fortawesome/free-solid-svg-icons'
+import auth from '../../Firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
+import CustomLink from '../../CustomLink';
 const Header = () => {
     const [menu,setMenu]=useState(false)
     const Location =useLocation()
+    const [user, loading, error] = useAuthState(auth);
+    const logout = () => {
+        signOut(auth);
+      };
     return (
         <nav style={Location?.pathname?.includes('/about')?{display:'none'}:{display:'block'}} className="bg-emerald-400  text-white sticky top-0 z-10" >
             <div className="max-w-7xl mx-auto px-2  sm:px-6 lg:px-8">
@@ -21,24 +29,27 @@ const Header = () => {
                         </div>
                         <div className="hidden sm:block sm:ml-6 ">
                             <div className="flex space-x-4 ">
-                                <Link to="/home" className=" px-3 py-2  text-sm font-medium" >Home</Link>
-                                <Link to='/about' className=" px-3 py-2  text-sm font-medium">About</Link>
-                                <Link to="/services" className=" px-3 py-2  text-sm font-medium">Services</Link>
-                                <Link to="/blogs" className=" px-3 py-2  text-sm font-medium">Blogs</Link>
+                                <CustomLink to="/home" className=" px-3 py-2  text-sm font-medium" >Home</CustomLink>
+                                <CustomLink to='/about' className=" px-3 py-2  text-sm font-medium">About</CustomLink>
+                                <CustomLink to="/services" className=" px-3 py-2  text-sm font-medium">Services</CustomLink>
+                                <CustomLink to="/blogs" className=" px-3 py-2  text-sm font-medium">Blogs</CustomLink>
                             </div>
                         </div>
                     </div>
-                    <Link to='/register' className='text-xl font-mono font-bold'>Register</Link>
+                    {
+                        user? <button onClick={logout} className='text-xl font-mono font-bold'>Logout</button>:<Link to='/register' className='text-xl font-mono font-bold'>Register</Link>
+                    }
+                   
                 </div>
               
                 {
                     menu ?
                         <div className="sm:hidden" id="mobile-menu">
                             <div class="px-2 pt-2 pb-3 space-y-1">
-                                <Link to="/home" className=" py-2 px-3  text-base font-medium" >Home</Link>
-                                <Link to="/about" className=" block px-3 py-2  text-base font-medium">About</Link>
-                                <Link to="/services" className=" block px-3 py-2  text-base font-medium">Services</Link>
-                                <Link to="/blogs" className=" block px-3 py-2  text-base font-medium">Blogs</Link>
+                                <CustomLink to="/home" className=" py-2 px-3  text-base font-medium" >Home</CustomLink>
+                                <CustomLink to="/about" className=" block px-3 py-2  text-base font-medium">About</CustomLink>
+                                <CustomLink to="/services" className=" block px-3 py-2  text-base font-medium">Services</CustomLink>
+                                <CustomLink to="/blogs" className=" block px-3 py-2  text-base font-medium">Blogs</CustomLink>
                             </div>
                         </div>
                         : ''

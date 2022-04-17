@@ -17,7 +17,7 @@ const About = () => {
                 <div className='md:px-10 order-2 md:order-none py-24'>
                     <h1 className='text-emerald-400 font-mono text-3xl font-bold py-7'>This is a my dream ..?</h1>
                     <h1 className='text-slate-400 font-mono text-2xl font-bold'>Professional Software engineers  job ,
-                        My  Life suscces InsaAllha </h1>
+                        My  Life susscces InsaAllha </h1>
 
                 </div>
                 <div className='order-1 shadow-2xl rounded  bg-gradient-to-r from-violet-500 to-fuchsia-500'>

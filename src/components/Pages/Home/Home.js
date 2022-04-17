@@ -13,10 +13,10 @@ const Home = () => {
                     </div>
                     <div className='mb-10'>
                         <div className='sm:flex w-[50%] mx-auto gap-6 md:mx-10'>
-                            <img className='animate-bounce w-[200px]  p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14118.png')} alt="" />
-                            <img className='hover:animate-ping w-[200px] p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14083.png')} alt="" />
+                            <img className='animate-bounce  w-[200px]  p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14118.png')} alt="" />
+                            <img className='animate-bounce w-[200px] p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14083.png')} alt="" />
                         </div>
-                        <img className='hover:animate-spin w-[200px] mx-auto  mt-6 p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14128.png')} alt="" />
+                        <img className='animate-bounce w-[200px] mx-auto  mt-6 p-2 rounded-lg shadow-2xl' src={require('../../img/doctor-14128.png')} alt="" />
                     </div>
                 </div>
             </div>

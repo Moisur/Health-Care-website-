@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
@@ -9,6 +10,7 @@ import Login from './components/Pages/Login/Login';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Register from './components/Pages/Register/Register';
 import Services from './components/Pages/Services/Services';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 function App() {
   return (
     <div>
@@ -17,13 +19,16 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/services' element={<Services />} />
+        <Route path='/services' element={<RequireAuth>
+          <Services />
+        </RequireAuth>} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer></Footer>
+      <Toaster/>
     </div>
   );
 }
