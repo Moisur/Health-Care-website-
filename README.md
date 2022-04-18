@@ -2,13 +2,13 @@
 
 ## Website Name :
 
-### DocTreat
+### HealthCareServices
 
 ## Available Live Site Link : https://health-care-services-67358.web.app/
 
 ### [HealthCareServices.com](https://health-care-services-67358.web.app/)
 
-## DocTreat Website Features :
+## HealthCareServices Website Features :
 
 - A Clear Description & Design.
 - Mobile Friendly & Responsive Design.
@@ -16,7 +16,7 @@
 - Easy To Login & Sign Up.
 - More Functionality.
 
-## DocTreat Website Techonologies To Build : 
+## HealthCareServices Website Techonologies To Build : 
 
 1. React.
 2. Tailwind.
