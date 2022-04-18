@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUnlock, faLock } from '@fortawesome/free-solid-svg-icons'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import './Register.css'
 import { useCreateUserWithEmailAndPassword, useSignInWithGithub } from 'react-firebase-hooks/auth';
 import auth from '../../../Firebase.init';

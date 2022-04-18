@@ -15,7 +15,8 @@ const About = () => {
             </div>
             <div className='w-[90%] mx-auto mt-52 gap-9 grid  grid-cols-1 md:grid-cols-2 '>
                 <div className='md:px-10 order-2 md:order-none py-24'>
-                    <h1 className='text-emerald-400 font-mono text-3xl font-bold py-7'>This is a my dream ..?</h1>
+                    <h1 className='text-emerald-400 font-mono text-4xl font-bold py-7'>This is a my names Md: Mosiur Islma </h1>
+                    <h1 className=' font-mono text-3xl font-bold py-7'>This is a my dream ..?</h1>
                     <h1 className='text-slate-400 font-mono text-2xl font-bold'>Professional Software engineers  job ,
                         My  Life susscces InsaAllha </h1>
 

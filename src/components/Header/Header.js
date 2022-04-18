@@ -31,7 +31,7 @@ const Header = () => {
                             <div className="flex space-x-4 ">
                                 <CustomLink to="/home" className=" px-3 py-2  text-sm font-medium" >Home</CustomLink>
                                 <CustomLink to='/about' className=" px-3 py-2  text-sm font-medium">About</CustomLink>
-                                <CustomLink to="/services" className=" px-3 py-2  text-sm font-medium">Services</CustomLink>
+                                {/* <CustomLink to="/services" className=" px-3 py-2  text-sm font-medium">Services</CustomLink> */}
                                 <CustomLink to="/blogs" className=" px-3 py-2  text-sm font-medium">Blogs</CustomLink>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Header = () => {
                             <div class="px-2 pt-2 pb-3 space-y-1">
                                 <CustomLink to="/home" className=" py-2 px-3  text-base font-medium" >Home</CustomLink>
                                 <CustomLink to="/about" className=" block px-3 py-2  text-base font-medium">About</CustomLink>
-                                <CustomLink to="/services" className=" block px-3 py-2  text-base font-medium">Services</CustomLink>
+                                {/* <CustomLink to="/services" className=" block px-3 py-2  text-base font-medium">Services</CustomLink> */}
                                 <CustomLink to="/blogs" className=" block px-3 py-2  text-base font-medium">Blogs</CustomLink>
                             </div>
                         </div>
